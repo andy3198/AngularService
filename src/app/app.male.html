@@ -1,0 +1,35 @@
+
+<div class="container">
+
+  <div class="card-header">
+    <!--<div class="example-button-row">
+      <a href="./app.component.html" mat-button color="primary">All</a>
+      <a href="./app.male.html" mat-button color="accent">Male</a>
+      <a href="./app.female.html" mat-button color="warn">Female</a>
+    </div>-->
+    <div class="card title">
+      {{ title }}
+    </div>
+  </div>
+
+  <div class="card-body">
+
+    <table class="table table-stripped">
+
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </thead>
+
+      <tr *ngFor="let obj of model">
+        <td>{{ obj.name }}</td>
+        <td>{{ obj.age }}</td>
+        <td>{{ obj.gender }}</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</div>

@@ -2,39 +2,40 @@
 
   <ng-container matColumnDef="name">
     <th mat-header-cell *matHeaderCellDef> Name </th>
-    <td mat-cell *matCellDef="let element"> element.name </td>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
   </ng-container>
 
   <ng-container matColumnDef="age">
     <th mat-header-cell *matHeaderCellDef> Weight </th>
-    <td mat-cell *matCellDef="let element"> element.weight </td>
+    <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
   </ng-container>
 
   <ng-container matColumnDef="gender">
     <th mat-header-cell *matHeaderCellDef> Symbol </th>
-    <td mat-cell *matCellDef="let element"> element.symbol </td>
+    <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
   </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>-->
 
+
+
+
 <div class="container">
 
   <div class="card-header">
-
+    <!--<div class="example-button-row">
+      <a href="./app.component.html" mat-button color="primary">All</a>
+      <a href="./app.male.html" mat-button color="accent">Male</a>
+      <a href="./app.female.html" mat-button color="warn">Female</a>
+    </div>-->
     <div class="card title">
       {{ title }}
     </div>
   </div>
 
   <div class="card-body">
-
-    <div class="example-button-row">
-      <a routerLink="/" routerLinkActive="active" class="button button1">All</a>
-      <a routerLink="male" routerLinkActive="active" class="button button1">Male</a>
-      <a routerLink="female" routerLinkActive="active" class="button button1">Female</a>
-    </div>
 
     <table class="table table-stripped">
 
@@ -55,5 +56,3 @@
   </div>
 
 </div>
-
-
